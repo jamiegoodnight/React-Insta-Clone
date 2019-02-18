@@ -1,16 +1,21 @@
 import React from 'react';
+
+import PropTypes from 'prop-types';
 import CommentSection from '../CommentSection/CommentSection';
+import './PostContainer.css'
 
 
 const PostContainer = props => {
     console.log(props);
     return (
-        <div>
+        <div className='post-container'>
             {props.dummy.map(element => (
-                <div key={element.timestamp}>
-                    <img src={element.thumbnailUrl}/>
-                    <p><strong>{element.username}</strong></p>
-                    <img src={element.imageUrl}/>
+                <div key={element.timestamp} className="post">
+                    <div className="post-header">
+                        <img className="user" src={element.thumbnailUrl}/>
+                        <p><strong>{element.username}</strong></p>
+                    </div>
+                    <img className="post-image" src={element.imageUrl}/>
                     <CommentSection 
                     element={element}
                     /> 
@@ -20,5 +25,13 @@ const PostContainer = props => {
     )
 }
 
+PostContainer.propTypes = {
+    dummy: PropTypes.arrayOf(PropTypes.shape({
+        timestamp: PropTypes.string,
+        thumbnailUrl: PropTypes.string,
+        username: PropTypes.string,
+        imageUrl: PropTypes.string,
+    }))
+}
 
 export default PostContainer;

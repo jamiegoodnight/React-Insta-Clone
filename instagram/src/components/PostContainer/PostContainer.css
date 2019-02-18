@@ -1,0 +1,27 @@
+.post-container {
+    width: 640px;
+}
+
+.post {
+    margin-top: 10px;
+    border: 1px solid lightgray;
+}
+
+.post-header {
+    display: flex;
+}
+
+.post-header p {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.user {
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+}
+
+.post-image {
+    width: 640px;
+}

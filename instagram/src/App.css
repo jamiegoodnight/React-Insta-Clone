@@ -31,3 +31,9 @@
     transform: rotate(360deg);
   }
 }
+
+.app{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
