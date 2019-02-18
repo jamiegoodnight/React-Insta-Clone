@@ -1,7 +1,11 @@
 import React from 'react';
 
-const SearchBar={
-    
+const SearchBar = props => {
+    return (
+        <div>
+        <input type="search"></input>
+        </div>
+    );
 }
 
 

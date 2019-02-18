@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import SearchBar from './components/SearchBar/SearchBar'
 import dummyData from './dummy-data'
 import './App.css';
 
@@ -16,10 +17,10 @@ class App extends Component {
     return (
       <div className="App">
       <SearchBar 
-
+      
       />
       <PostContainer 
-
+      dummy={this.state.dummy}
       />
       <CommentSection 
 
