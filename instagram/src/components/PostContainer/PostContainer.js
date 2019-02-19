@@ -15,7 +15,11 @@ const PostContainer = props => {
                         <img className="user" src={element.thumbnailUrl}/>
                         <p><strong>{element.username}</strong></p>
                     </div>
-                    <img className="post-image" src={element.imageUrl}/>
+                        <img className="post-image" src={element.imageUrl}/>
+                    <div className="social-icons">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                    </div>
                     <CommentSection 
                     element={element}
                     /> 

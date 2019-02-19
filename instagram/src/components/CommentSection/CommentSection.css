@@ -1,7 +1,15 @@
 .comment {
     display: flex;
+    margin-left: 5px;
 }
 
 .text {
+    margin-left: 5px;
+}
+
+.comments input {
+    background: white;
+    border: 0px solid;
+    margin-bottom: 5px;
     margin-left: 5px;
 }

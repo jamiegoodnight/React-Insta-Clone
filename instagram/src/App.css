@@ -32,8 +32,12 @@
   }
 }
 
-.app{
+.app {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  align-items: center;
+}
+
+p {
+  font-size: 15px;
 }
