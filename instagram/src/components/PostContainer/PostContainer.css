@@ -1,9 +1,11 @@
-.post-container {
-    width: 640px;
+.post-container-wrapper {
+    width: 500px;
+    margin-top: 40px;
 }
 
-.post {
-    margin-top: 10px;
+.post-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: 1px solid lightgray;
 }
 
@@ -17,14 +19,15 @@
 }
 
 .user {
-    height: 30px;
     width: 30px;
+    height: 30px;
     margin: 10px;
     border-radius: 20px;
 }
 
 .post-image {
-    width: 639px;
+    width: 499px;
+    height: 500px;
 }
 
 .social-icons i {

@@ -1,8 +1,11 @@
-.search-bar {
+.search-bar-wrapper {
     width: 640px;
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    position: fixed;
+    /* box-shadow: 0 4px 2px -2px #ededed; */
+    background:rgba(255,255,255, 0.9);
+    padding-top: 10px;
 }
 
 .insta-logo {
@@ -15,14 +18,20 @@
 .cam-logo {
     height: 30px;
     margin-right: 10px;
+    padding-bottom: 2px;
 }
 
 i {
     margin-top: 10px;
     margin-left: 20px;
     font-size: 20px;
+    
 }
 
 input {
     margin-top: 10px;
+}
+
+.search-bar-wrapper ::placeholder {
+    text-align: center;
 }
