@@ -2,9 +2,12 @@ import React from 'react';
 
 
 
-const authenticate = WrapperComponentOne => WrapperComponentTwo => props => {
- if (localStorage.getItem('email'))
-}
+const authenticate = App => Login => props =>
+  class extends React.Component {
+    render() {
+      return <App />;
+    }
+  };
 
 
 
