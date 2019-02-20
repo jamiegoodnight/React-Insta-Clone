@@ -1,5 +1,7 @@
 import React from 'react'
 import login from '../../assets/login.png'
+import loginForm from '../../assets/loginForm.png'
+import './Login.css'
 
 
 
@@ -24,9 +26,10 @@ class Login extends React.Component {
     };
     render(){
         return(
-            <div>
+            <div className="login">
                 <img src={login} alt="Mobile phones displayed"/>
-                <form onSubmit={this.login}>
+                <form className="login-form" onSubmit={this.login}>
+                    <img src={loginForm} alt="Login display"/>
                     <input type="email"  value={this.state.email} name="email" placeholder="email" onChange={this.handleLogin}/>
                     <input type="password" value={this.state.password} name="password" placeholder="password" minlength="8" onChange={this.handleLogin}/>
                     <button>login</button>             
