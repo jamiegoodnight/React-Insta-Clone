@@ -4,8 +4,8 @@ import login from '../../assets/login.png'
 
 
 class Login extends React.Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state={
             email:"",
             password: ""
@@ -26,9 +26,9 @@ class Login extends React.Component {
         return(
             <div>
                 <img src={login} alt="Mobile phones displayed"/>
-                <form onSubmit={props.login}>
-                    <input type="email" placeholder="email"/>
-                    <input type="password" placeholder="password" min="8"/>
+                <form onSubmit={this.login}>
+                    <input type="email"  value={this.state.email} name="email" placeholder="email" onChange={this.handleLogin}/>
+                    <input type="password" value={this.state.password} name="password" placeholder="password" minlength="8" onChange={this.handleLogin}/>
                     <button>login</button>             
                 </form>
             </div>
