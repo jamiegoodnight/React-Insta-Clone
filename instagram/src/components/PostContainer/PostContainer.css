@@ -31,5 +31,32 @@
 }
 
 .social-icons i {
+    margin-right: 5px;
+    margin-left: 5px;
     font-size: 20px;
+}
+
+.fa-heart:hover {
+    cursor: pointer;
+}
+
+.fas {
+    color: red;
+    animation: after-like 2s ease;
+}
+
+@keyframes after-like {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+.likes {
+    margin-top: 10px;
+    margin-bottom: -25px;
+    margin-left: 5px;
 }

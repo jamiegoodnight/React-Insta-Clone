@@ -8,6 +8,7 @@ class CommentSection extends React.Component {
         super(props);
         this.state={
             comments: this.props.element.comments,
+            text: ""
         }
     }
 
@@ -38,7 +39,7 @@ class CommentSection extends React.Component {
                     </div>
                 ))}
                 <form className="reply" onSubmit={this.addComment}> 
-                    <input type="text" placeholder="Add a comment..." value={this.props.text} name="text" onChange={this.handleChanges} />
+                    <input type="text" placeholder="Add a comment..." value={this.state.text} name="text" onChange={this.handleChanges} />
                     <p><strong>...</strong></p>
                 </form>
             </div>
