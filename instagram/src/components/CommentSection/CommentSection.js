@@ -28,8 +28,13 @@ const CommentInput = styled.input`
     margin-bottom: 5px;
     margin-left: 5px;
     border: 0px solid;
-`
+    outline: none;
 
+    ${CommentInput}:focus { 
+        box-shadow: 0px 0px 10px lightgray;
+    }
+    
+    `
 
 class CommentSection extends React.Component {
     constructor(props){

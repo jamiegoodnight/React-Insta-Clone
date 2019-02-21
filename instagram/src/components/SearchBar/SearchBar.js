@@ -26,6 +26,7 @@ const InstaLogo = styled.img`
     `
 const SearchInputs = styled.input`
     margin-bottom: 10px;
+    border: 0px solid;
     outline: none;
 
     ${SearchInputs}:focus { 
@@ -35,12 +36,12 @@ const SearchInputs = styled.input`
     ${SearchInputs}::placeholder {
         text-align: center;
     }
-`
+    `
 const SearchIcons = styled.i`
     margin-top: 10px;
     margin-left: 20px;
     font-size: 20px;
-`
+    `
 
 const SearchBar = props => {
     return (
@@ -50,7 +51,7 @@ const SearchBar = props => {
                 <InstaLogo src={instaLogo}  />
             </div>
             <div>
-                <SearchInputs type="search" placeholder="search" onKeyDown={props.postSearch}></SearchInputs>
+                <SearchInputs type="search" placeholder="search" onKeyDown={props.postSearch}/>
             </div>
             <div>
             <SearchIcons className="far fa-compass"></SearchIcons>
