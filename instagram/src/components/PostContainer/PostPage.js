@@ -19,22 +19,22 @@ class PostPage extends Component {
     });
   }
 
-  postSearch = e => {
-    const dummySearch=this.state.dummy.filter(x=>
-      x.username.includes(e.target.value)
-    )
-    console.log(dummySearch)
-    this.setState({
-      search: dummySearch
-    })
-  }
-
-
   // postSearch = e => {
-  //   const mySearch=this.state.dummy.filter(x=>
-  //     x.username.includes(e.target.value))
-  //     this.setState({search: mySearch})
+  //   const dummySearch=this.state.dummy.filter(x=>
+  //     x.username.includes(e.target.value)
+  //   )
+  //   console.log(dummySearch)
+  //   this.setState({
+  //     search: dummySearch
+  //   })
   // }
+
+
+  postSearch = e => {
+    const mySearch=this.state.dummy.filter(x=>
+      x.username.includes(e.target.value))
+      this.setState({search: mySearch})
+  }
 
   render() {
     return (
