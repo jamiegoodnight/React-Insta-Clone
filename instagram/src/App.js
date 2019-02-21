@@ -17,6 +17,10 @@ const App = () => {
 export default authenticate(App)(Login);
 
 
+// const authenticate = App => Login =>
+//   class extends React.Component
+
+
 
 
 
