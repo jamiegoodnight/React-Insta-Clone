@@ -9,7 +9,6 @@ class Social extends React.Component {
 
         }
     }
-
     likeIt = e => {
         if (this.state.liked===false){
             e.target.classList.add('fas')
@@ -27,15 +26,6 @@ class Social extends React.Component {
                     liked: liked
                 })}
     }
-
-
-    // likeIt = e => {
-    //     let likes=this.state.likes + 1
-    //     this.setState({
-    //         likes: likes 
-    //     })
-    // }
-
     render(){
         return(
             <div className="social-icons">
@@ -48,6 +38,5 @@ class Social extends React.Component {
         )
     }
 }
-
 
 export default Social;
