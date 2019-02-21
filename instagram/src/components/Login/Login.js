@@ -20,8 +20,8 @@ const LoginForm = styled.form`
     border: 1px solid lightgray;
 
         ${LoginForm} button {
-            width: 134px;
-            height: 22px;
+            width: 170px;
+            height: 30px;
             margin-top: 20px;
             background: #b1cc71;
             border-radius: 3px;
