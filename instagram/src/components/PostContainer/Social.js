@@ -1,4 +1,20 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const SocialIcons = styled.div`
+
+    ${SocialIcons} i {
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 20px;
+    }
+
+`
+const Likes = styled.div`
+    margin-bottom: -10px;
+    margin-left: 5px;
+`
 
 class Social extends React.Component {
     constructor(props){
@@ -28,13 +44,13 @@ class Social extends React.Component {
     }
     render(){
         return(
-            <div className="social-icons">
+            <SocialIcons>
                 <i className="far fa-heart" onClick={this.likeIt}></i>
                 <i className="far fa-comment"></i>
-                <div className="likes">
+                <Likes>
                     <p><strong>{this.state.likes}</strong> likes</p>
-                </div>
-            </div>
+                </Likes>
+            </SocialIcons>
         )
     }
 }
