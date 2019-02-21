@@ -1,25 +1,63 @@
 import React from 'react';
+import styled from 'styled-components';
 import instaLogo from '../../assets/instaLogo.png';
-import camLogo from '../../assets/camLogo.svg'
-import './SearchBar.css'
+import camLogo from '../../assets/camLogo.svg';
 
+const SearchBarWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    /* box-shadow: 0 4px 2px -2px #ededed; */
+    background:rgba(255,255,255, 0.9);
+    border-bottom: 1px solid lightgray;
+    padding-top: 10px;
+    `
+const CamLogo = styled.img`
+    height: 30px;
+    margin-right: 10px;
+    padding-bottom: 2px;
+    `
+const InstaLogo = styled.img`
+    height: 30px;
+    border-left: 1px solid black;
+    padding-top: 5px;
+    padding-left: 10px;
+    `
+const SearchInputs = styled.input`
+    margin-bottom: 10px;
+    outline: none;
+
+    ${SearchInputs}:focus { 
+        box-shadow: 0px 0px 10px lightgray;
+    }
+
+    ${SearchInputs}::placeholder {
+        text-align: center;
+    }
+`
+const SearchIcons = styled.i`
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+`
 
 const SearchBar = props => {
     return (
-        <div className="search-bar-wrapper">
+        <SearchBarWrapper>
             <div>
-                <img className="cam-logo" src={camLogo} />
-                <img className="insta-logo" src={instaLogo}  />
+                <CamLogo src={camLogo} />
+                <InstaLogo src={instaLogo}  />
             </div>
             <div>
-                <input type="search" placeholder="search" onKeyDown={props.postSearch}></input>
+                <SearchInputs type="search" placeholder="search" onKeyDown={props.postSearch}></SearchInputs>
             </div>
             <div>
-            <i className="far fa-compass"></i>
-            <i className="far fa-heart"></i>
-            <i className="far fa-user"></i>
+            <SearchIcons className="far fa-compass"></SearchIcons>
+            <SearchIcons className="far fa-heart"></SearchIcons>
+            <SearchIcons className="far fa-user"></SearchIcons>
             </div>
-        </div>
+        </SearchBarWrapper>
     );
 }
 

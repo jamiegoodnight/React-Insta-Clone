@@ -1,10 +1,8 @@
 import React from 'react';
-
-import authenticate from './components/authentication/authenticate'
-import Login from './components/Login/Login'
-import PostPage from './components/PostContainer/PostPage'
-import './App.css'
-
+import './App.css';
+import authenticate from './components/authentication/authenticate';
+import Login from './components/Login/Login';
+import PostPage from './components/PostContainer/PostPage';
 
 const App = () => {
   return (
@@ -17,12 +15,7 @@ const App = () => {
 export default authenticate(App)(Login);
 
 
-// const authenticate = App => Login =>
-//   class extends React.Component
-
-
-
-
+// Refactored into PostPage. Commented here reference. 
 
 // import React, { Component } from 'react';
 
