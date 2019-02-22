@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import dummyData from '../../dummy-data';
 import styled from 'styled-components';
 import SearchBar from '../SearchBar/SearchBar';
 import PostContainer from './PostContainer';
-import dummyData from '../../dummy-data';
 
 const PageWrapper = styled.div`
   display: flex;

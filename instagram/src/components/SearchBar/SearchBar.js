@@ -1,7 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 import instaLogo from '../../assets/instaLogo.png';
 import camLogo from '../../assets/camLogo.svg';
+import styled from 'styled-components';
+
 
 const SearchBarWrapper = styled.div`
     width: 100%;

@@ -52,7 +52,7 @@ class CommentSection extends React.Component {
       addComment = e => { 
         e.preventDefault();
         const newComment = {
-          username: "jamieGIII",
+          username: localStorage.getItem("username"),
           text: this.state.text,
         }
         this.setState({

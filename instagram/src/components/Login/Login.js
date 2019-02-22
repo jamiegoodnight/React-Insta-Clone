@@ -44,7 +44,7 @@ class Login extends React.Component {
     constructor(props){
         super(props);
         this.state={
-            email:"",
+            username: "",
             password: ""
         }
     };
@@ -55,7 +55,7 @@ class Login extends React.Component {
     };
     login = e => {
         e.preventDefault();
-        localStorage.setItem("email", this.state.email);
+        localStorage.setItem("username", this.state.username);
         localStorage.setItem("password", this.state.password);
         window.location.reload();
     };
@@ -65,9 +65,9 @@ class Login extends React.Component {
                 <img src={login} alt="Mobile phones displayed"/>
                 <LoginForm onSubmit={this.login}>
                     <img src={loginForm} alt="Login display"/>
-                    <LoginInput type="email"  value={this.state.email} name="email" placeholder="email" onChange={this.handleLogin}/>
+                    <LoginInput type="text" value={this.state.username} name="username" placeholder="username" onChange={this.handleLogin}/>
                     <LoginInput type="password" value={this.state.password} name="password" placeholder="password" minlength="8" onChange={this.handleLogin}/>
-                    <button>login</button>             
+                    <button>Log In</button>             
                 </LoginForm>
             </InstagramLogin>
         )

@@ -5,7 +5,7 @@ import React from 'react';
 const authenticate = App => Login =>
   class extends React.Component {
     render() {
-     if (!localStorage.getItem('email') || !localStorage.getItem('password')){
+     if (!localStorage.getItem('username') || !localStorage.getItem('password')){
          return <Login />
      } else { 
          return <App />
