@@ -1,0 +1,19 @@
+
+.fa-heart:hover {
+    cursor: pointer;
+}
+
+.fas {
+    color: red;
+    animation: after-like 2s ease;
+}
+
+@keyframes after-like {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: red;
+    }
+}
