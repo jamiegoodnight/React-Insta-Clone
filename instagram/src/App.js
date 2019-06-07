@@ -1,21 +1,22 @@
-import React from 'react';
-import './App.css';
-import authenticate from './components/authentication/authenticate';
-import Login from './components/Login/Login';
-import PostPage from './components/PostContainer/PostPage';
+import React from "react";
+import "./App.css";
+import Authenticate from "./components/authentication/Authenticate";
+import Login from "./components/Login/Login";
+import PostPage from "./components/PostContainer/PostPage";
 
 const App = () => {
   return (
     <div>
       <PostPage />
     </div>
-  )
-}
+  );
+};
 
-export default authenticate(App)(Login);
+export default Authenticate(App)(Login);
 
+// export default authenticate(App)(Login);
 
-// Refactored into PostPage. Commented here reference. 
+// Refactored into PostPage. Commented here reference.
 
 // import React, { Component } from 'react';
 
@@ -23,7 +24,6 @@ export default authenticate(App)(Login);
 // import PostContainer from './components/PostContainer/PostContainer'
 // import dummyData from './dummy-data'
 // import './App.css';
-
 
 // class App extends Component {
 //   constructor(){
@@ -49,10 +49,10 @@ export default authenticate(App)(Login);
 //   render() {
 //     return (
 //       <div className="app-wrapper">
-//       <SearchBar 
+//       <SearchBar
 //       postSearch={this.postSearch}
 //       />
-//       <PostContainer 
+//       <PostContainer
 //       dummy={this.state.search.length > 0 ? this.state.search : this.state.dummy}
 //       />
 //       </div>
@@ -61,4 +61,3 @@ export default authenticate(App)(Login);
 // }
 
 // export default App;
-

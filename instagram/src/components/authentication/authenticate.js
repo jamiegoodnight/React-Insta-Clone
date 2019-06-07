@@ -1,29 +1,19 @@
-import React from 'react';
+import React from "react";
+import App from "../../App";
+import Login from "../Login/Login";
 
-
-
-const authenticate = App => Login =>
+const Authenticate = App => Login =>
   class extends React.Component {
     render() {
-     if (!localStorage.getItem('username') || !localStorage.getItem('password')){
-         return <Login />
-     } else { 
-         return <App />
-     }
+      if (
+        !localStorage.getItem("username") ||
+        !localStorage.getItem("password")
+      ) {
+        return <Login />;
+      } else {
+        return <App />;
+      }
     }
   };
 
-
-// const authenticate = App => Login => props =>
-//   class extends React.Component {
-//     constructor(props){
-//           super(props);
-//       }
-//     render() {
-//       return <App />;
-//     }
-//   };
-
-
-
-export default authenticate 
+export default Authenticate;
